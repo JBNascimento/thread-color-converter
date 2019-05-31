@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  cod_anchor: MyString
+  cod_dmc: MyString
+  cod_maxi: MyString
+
+two:
+  name: MyString
+  cod_anchor: MyString
+  cod_dmc: MyString
+  cod_maxi: MyString

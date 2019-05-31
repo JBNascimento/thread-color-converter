@@ -1,0 +1,26 @@
+
+<p>
+  <strong>Nome:</strong>
+  <%= @hank.name %>
+</p>
+
+<p>
+  <strong>Código Anchor:</strong>
+  <%= @hank.cod_anchor %>
+</p>
+
+<p>
+  <strong>Código DMC:</strong>
+  <%= @hank.cod_dmc %>
+</p>
+
+<p>
+  <strong>Código Maxi:</strong>
+  <%= @hank.cod_maxi %>
+</p>
+<p>
+  <%= image_tag @hank.image if @hank.image.attached?%>
+</p>
+
+<%= link_to 'Editar', edit_hank_path(@hank) %> |
+<%= link_to 'Voltar', hanks_path %>

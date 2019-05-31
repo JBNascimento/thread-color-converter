@@ -1,0 +1,42 @@
+<%= form_with(model: hank, local: true, multipart: true) do |form| %>
+  <% if hank.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(hank.errors.count, "error") %> prohibited this hank from being saved:</h2>
+
+      <ul>
+      <% hank.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cod_anchor %>
+    <%= form.text_field :cod_anchor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cod_dmc %>
+    <%= form.text_field :cod_dmc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cod_maxi %>
+    <%= form.text_field :cod_maxi %>
+  </div>
+
+ '<div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
